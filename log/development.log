@@ -14648,3 +14648,1244 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/striped_lens.png" for 127.0.0.1 at Wed Jul 10 10:27:17 +0200 2013
 Served asset /striped_lens.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-10 11:59:56 +0200
+Processing by Refinery::PagesController#home as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::Page Load (0.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."link_url" = '/' LIMIT 1[0m
+  [1m[35mRefinery::Page::Translation Load (0.0ms)[0m  SELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 1
+  [1m[36mRefinery::PagePart Load (0.0ms)[0m  [1mSELECT "refinery_page_parts".* FROM "refinery_page_parts" WHERE "refinery_page_parts"."refinery_page_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::PagePart::Translation Load (0.0ms)[0m  SELECT "refinery_page_part_translations".* FROM "refinery_page_part_translations" WHERE "refinery_page_part_translations"."refinery_page_part_id" IN (1, 2)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_content_page.html.erb (413.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/pages/home.html.erb within layouts/application (550.0ms)
+Completed 200 OK in 1393ms (Views: 724.0ms | ActiveRecord: 288.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-07-10 11:59:58 +0200
+Compiled about.css  (70ms)  (pid 5248)
+Compiled twitter-bootstrap-static/bootstrap.css  (80ms)  (pid 5248)
+Compiled twitter-bootstrap-static/fontawesome.css  (24ms)  (pid 5248)
+Compiled bootstrap_and_overrides.css  (273ms)  (pid 5248)
+Compiled contact.css  (3ms)  (pid 5248)
+Compiled home.css  (8ms)  (pid 5248)
+Compiled media.css  (4ms)  (pid 5248)
+Compiled pages.css  (5ms)  (pid 5248)
+Compiled prettyPhoto.css  (0ms)  (pid 5248)
+Compiled programs.css  (9ms)  (pid 5248)
+Compiled application.css  (3ms)  (pid 5248)
+Served asset /application.css - 200 OK (1435ms)
+
+
+Started GET "/assets/prettyPhoto.css" for 127.0.0.1 at 2013-07-10 12:00:00 +0200
+Served asset /prettyPhoto.css - 304 Not Modified (75ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-07-10 12:00:00 +0200
+Served asset /favicon.ico - 200 OK (104ms)
+
+
+Started GET "/assets/js/jquery.prettyPhoto.js" for 127.0.0.1 at 2013-07-10 12:00:01 +0200
+Compiled js/jquery.prettyPhoto.js  (2ms)  (pid 5248)
+Served asset /js/jquery.prettyPhoto.js - 304 Not Modified (274ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-07-10 12:00:01 +0200
+Compiled jquery.js  (5ms)  (pid 5248)
+Compiled jquery_ujs.js  (0ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-transition.js  (1ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (1ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (1ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-tab.js  (1ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-button.js  (1ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (2ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (1ms)  (pid 5248)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 5248)
+Compiled twitter/bootstrap.js  (404ms)  (pid 5248)
+Compiled about.js  (1316ms)  (pid 5248)
+Compiled bootstrap.js  (364ms)  (pid 5248)
+Compiled contact.js  (306ms)  (pid 5248)
+Compiled home.js  (224ms)  (pid 5248)
+Compiled js/jquery-1.3.2.min.js  (1ms)  (pid 5248)
+Compiled js/jquery-1.4.4.min.js  (2ms)  (pid 5248)
+Compiled js/jquery-1.6.1.min.js  (40ms)  (pid 5248)
+Compiled media.js  (223ms)  (pid 5248)
+Compiled pages.js  (216ms)  (pid 5248)
+Compiled programs.js  (212ms)  (pid 5248)
+Compiled application.js  (4135ms)  (pid 5248)
+Served asset /application.js - 304 Not Modified (4334ms)
+
+
+Started GET "/assets/js/bootstrap.min.js" for 127.0.0.1 at 2013-07-10 12:00:06 +0200
+Served asset /js/bootstrap.min.js - 404 Not Found (26ms)
+Processing by Refinery::PagesController#show as JS
+  Parameters: {"path"=>"assets/js/bootstrap.min", "locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::Page Load (1.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" INNER JOIN "refinery_page_translations" ON "refinery_page_translations"."refinery_page_id" = "refinery_pages"."id" WHERE "refinery_page_translations"."locale" IN ('en') AND "refinery_page_translations"."slug" = 'assets' AND "refinery_pages"."parent_id" IS NULL LIMIT 1[0m
+  [1m[35mRefinery::Page Load (2.0ms)[0m  SELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."menu_match" = '^/404$' LIMIT 1
+  [1m[36mRefinery::PagePart Load (1.0ms)[0m  [1mSELECT "refinery_page_parts".* FROM "refinery_page_parts" WHERE "refinery_page_parts"."refinery_page_id" IN (2) ORDER BY position ASC[0m
+  [1m[35mRefinery::PagePart::Translation Load (1.0ms)[0m  SELECT "refinery_page_part_translations".* FROM "refinery_page_part_translations" WHERE "refinery_page_part_translations"."refinery_page_part_id" IN (3)
+  Rendered refinery/pages/show.html.erb within layouts/application (2.0ms)
+Filter chain halted as :find_page rendered or redirected
+Completed 404 Not Found in 26ms (Views: 15.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/title_small.png" for 127.0.0.1 at 2013-07-10 12:00:06 +0200
+Served asset /title_small.png - 304 Not Modified (38ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2013-07-10 12:00:06 +0200
+Served asset /logo_small.png - 304 Not Modified (90ms)
+
+
+Started GET "/assets/bg2_translucent.jpg" for 127.0.0.1 at 2013-07-10 12:00:07 +0200
+Served asset /bg2_translucent.jpg - 304 Not Modified (26ms)
+
+
+Started GET "/assets/striped_lens.png" for 127.0.0.1 at 2013-07-10 12:00:07 +0200
+Served asset /striped_lens.png - 200 OK (27ms)
+
+
+Started GET "/refinery" for 127.0.0.1 at 2013-07-10 12:00:12 +0200
+Processing by Refinery::Admin::DashboardController#index as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (1.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+Completed 401 Unauthorized in 48ms
+
+
+Started GET "/assets/js/bootstrap.min.js" for 127.0.0.1 at 2013-07-10 12:00:12 +0200
+Served asset /js/bootstrap.min.js - 404 Not Found (10ms)
+Processing by Refinery::PagesController#show as JS
+  Parameters: {"path"=>"assets/js/bootstrap.min", "locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::Page Load (1.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" INNER JOIN "refinery_page_translations" ON "refinery_page_translations"."refinery_page_id" = "refinery_pages"."id" WHERE "refinery_page_translations"."locale" IN ('en') AND "refinery_page_translations"."slug" = 'assets' AND "refinery_pages"."parent_id" IS NULL LIMIT 1[0m
+  [1m[35mRefinery::Page Load (0.0ms)[0m  SELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."menu_match" = '^/404$' LIMIT 1
+  [1m[36mRefinery::PagePart Load (0.0ms)[0m  [1mSELECT "refinery_page_parts".* FROM "refinery_page_parts" WHERE "refinery_page_parts"."refinery_page_id" IN (2) ORDER BY position ASC[0m
+  [1m[35mRefinery::PagePart::Translation Load (0.0ms)[0m  SELECT "refinery_page_part_translations".* FROM "refinery_page_part_translations" WHERE "refinery_page_part_translations"."refinery_page_part_id" IN (3)
+  Rendered refinery/pages/show.html.erb within layouts/application (1.0ms)
+Filter chain halted as :find_page rendered or redirected
+Completed 404 Not Found in 19ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/refinery/login" for 127.0.0.1 at 2013-07-10 12:00:13 +0200
+Processing by Refinery::SessionsController#new as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (1.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/sessions/new.html.erb within refinery/layouts/login (16.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (10.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (1.0ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/refinery/refinery.css" for 127.0.0.1 at 2013-07-10 12:00:13 +0200
+Compiled refinery/layout.css  (402ms)  (pid 5248)
+Compiled refinery/site_bar.css  (22ms)  (pid 5248)
+Compiled refinery/ui.css  (24ms)  (pid 5248)
+Compiled refinery/submenu.css  (9ms)  (pid 5248)
+Compiled refinery/tooltips.css  (18ms)  (pid 5248)
+Compiled wymeditor/skins/refinery/skin.css  (113ms)  (pid 5248)
+Compiled refinery/refinery.css  (822ms)  (pid 5248)
+Served asset /refinery/refinery.css - 200 OK (861ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:00:14 +0200
+Compiled jquery-ui.js  (8ms)  (pid 5248)
+Compiled modernizr-min.js  (0ms)  (pid 5248)
+Compiled jquery/jquery.corner.js  (0ms)  (pid 5248)
+Compiled jquery/jquery.textTruncate.js  (0ms)  (pid 5248)
+Compiled jquery/jquery.html5-placeholder-shim.js  (0ms)  (pid 5248)
+Compiled jquery/jquery.timers.js  (1ms)  (pid 5248)
+Compiled jquery/jquery.jcarousel.js  (0ms)  (pid 5248)
+Compiled admin.js  (0ms)  (pid 5248)
+Compiled refinery/core.js  (0ms)  (pid 5248)
+Compiled refinery/site_bar.js  (1ms)  (pid 5248)
+Compiled refinery/admin.js  (20ms)  (pid 5248)
+Compiled refinery/submenu.js  (3ms)  (pid 5248)
+Compiled refinery/interface.js  (1168ms)  (pid 5248)
+Compiled refinery/sortable_menu.js  (312ms)  (pid 5248)
+Compiled refinery/submit_continue.js  (311ms)  (pid 5248)
+Compiled refinery/ajaxy_pagination.js  (424ms)  (pid 5248)
+Compiled refinery/refinery.js  (2861ms)  (pid 5248)
+Served asset /refinery/refinery.js - 304 Not Modified (3002ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:00:17 +0200
+Served asset /admin.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:00:17 +0200
+Compiled wymeditor/skins/refinery/skin.js  (0ms)  (pid 5248)
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (90ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:00:18 +0200
+Compiled wymeditor/lang/en.js  (0ms)  (pid 5248)
+Served asset /wymeditor/lang/en.js - 304 Not Modified (78ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:00:18 +0200
+Compiled wymeditor/setup.js  (51ms)  (pid 5248)
+Compiled wymeditor/functions.js  (6ms)  (pid 5248)
+Compiled wymeditor/prototypes.js  (21ms)  (pid 5248)
+Compiled wymeditor/classes.js  (25ms)  (pid 5248)
+Compiled wymeditor/validators.js  (15ms)  (pid 5248)
+Compiled wymeditor/browsers/ie.js  (6ms)  (pid 5248)
+Compiled wymeditor/browsers/mozilla.js  (50ms)  (pid 5248)
+Compiled wymeditor/browsers/opera.js  (2ms)  (pid 5248)
+Compiled wymeditor/browsers/webkit.js  (5ms)  (pid 5248)
+Compiled refinery/boot_wym.js  (6ms)  (pid 5248)
+Compiled refinery/wymeditor.js  (948ms)  (pid 5248)
+Served asset /refinery/wymeditor.js - 304 Not Modified (1017ms)
+
+
+Started GET "/assets/refinery/text_field_background.png" for 127.0.0.1 at 2013-07-10 12:00:20 +0200
+Served asset /refinery/text_field_background.png - 304 Not Modified (37ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:00:20 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (41ms)
+
+
+Started POST "/refinery/users/login" for 127.0.0.1 at 2013-07-10 12:00:43 +0200
+Processing by Refinery::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dhcLRmpb4z4FBeIOvqrVGtf5yxhSB8B5kcwrXA9nO+o=", "refinery_user"=>{"login"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "locale"=>:en}
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+Completed 401 Unauthorized in 4ms
+Processing by Refinery::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dhcLRmpb4z4FBeIOvqrVGtf5yxhSB8B5kcwrXA9nO+o=", "refinery_user"=>{"login"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "locale"=>:en}
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/sessions/new.html.erb within refinery/layouts/login (9.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (8.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:00:44 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:00:44 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:00:44 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:00:44 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:00:44 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/cancel.png" for 127.0.0.1 at 2013-07-10 12:00:44 +0200
+Served asset /refinery/icons/cancel.png - 200 OK (63ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:00:44 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/text_field_background.png" for 127.0.0.1 at 2013-07-10 12:00:45 +0200
+Served asset /refinery/text_field_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/refinery/users/password/new" for 127.0.0.1 at 2013-07-10 12:04:17 +0200
+Processing by Refinery::PasswordsController#new as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/passwords/new.html.erb within refinery/layouts/login (10.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (8.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:04:17 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:04:17 +0200
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:04:17 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:04:17 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:04:17 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:04:18 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/text_field_background.png" for 127.0.0.1 at 2013-07-10 12:04:18 +0200
+Served asset /refinery/text_field_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/refinery/users/register" for 127.0.0.1 at 2013-07-10 12:04:32 +0200
+Processing by Refinery::UsersController#new as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+Redirected to http://localhost:3000/refinery/login
+Filter chain halted as :redirect? rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/refinery/login" for 127.0.0.1 at 2013-07-10 12:04:33 +0200
+Processing by Refinery::SessionsController#new as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/sessions/new.html.erb within refinery/layouts/login (10.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (10.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:04:33 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:04:33 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:04:33 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:04:33 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:04:33 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:04:34 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/text_field_background.png" for 127.0.0.1 at 2013-07-10 12:04:34 +0200
+Served asset /refinery/text_field_background.png - 304 Not Modified (0ms)
+
+
+Started POST "/refinery/users/login" for 127.0.0.1 at 2013-07-10 12:04:57 +0200
+Processing by Refinery::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dhcLRmpb4z4FBeIOvqrVGtf5yxhSB8B5kcwrXA9nO+o=", "refinery_user"=>{"login"=>"gcbanevicius", "password"=>"[FILTERED]", "remember_me"=>"0"}, "locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (1.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" WHERE (username = 'gcbanevicius' OR email = 'gcbanevicius') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mUPDATE "refinery_users" SET "current_sign_in_at" = '2013-07-10 10:04:57.697291', "sign_in_count" = 2, "updated_at" = '2013-07-10 10:04:57.767295' WHERE "refinery_users"."id" = 1[0m
+  [1m[35m (89.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/refinery
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1[0m
+Completed 302 Found in 391ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/refinery" for 127.0.0.1 at 2013-07-10 12:04:58 +0200
+Processing by Refinery::Admin::DashboardController#index as HTML
+  Parameters: {"locale"=>:en}
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (1.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36mRefinery::User Load (1.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" ORDER BY updated_at DESC LIMIT 7[0m
+  [1m[35mRefinery::Image Load (1.0ms)[0m  SELECT "refinery_images".* FROM "refinery_images" ORDER BY updated_at DESC LIMIT 7
+  [1m[36mRefinery::Resource Load (0.0ms)[0m  [1mSELECT "refinery_resources".* FROM "refinery_resources" ORDER BY updated_at DESC LIMIT 7[0m
+  [1m[35mRefinery::Page Load (0.0ms)[0m  SELECT "refinery_pages".* FROM "refinery_pages" ORDER BY updated_at DESC LIMIT 7
+  [1m[36mRefinery::Page::Translation Load (0.0ms)[0m  [1mSELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 2[0m
+  [1m[35mRefinery::Page Load (0.0ms)[0m  SELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."id" = 1 LIMIT 1
+  [1m[36mRefinery::Page::Translation Load (2.0ms)[0m  [1mSELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 1[0m
+  [1m[35mRefinery::Page::Translation Load (0.0ms)[0m  SELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 1[0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/dashboard/app/views/refinery/admin/dashboard/_recent_activity.html.erb (171.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/dashboard/app/views/refinery/admin/dashboard/_records.html.erb (176.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/dashboard/app/views/refinery/admin/dashboard/_additional_dashboard_menu_items.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/dashboard/app/views/refinery/admin/dashboard/_actions.html.erb (15.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/dashboard/app/views/refinery/admin/dashboard/index.html.erb within layouts/refinery/admin (202.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (10.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (1.0ms)
+Completed 200 OK in 509ms (Views: 304.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:04:58 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:04:58 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:04:58 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:04:59 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:04:59 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 12:04:59 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (46ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 12:04:59 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (52ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 12:04:59 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (25ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:04:59 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 12:05:00 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (20ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 12:05:00 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (19ms)
+
+
+Started GET "/assets/refinery/icons/accept.png" for 127.0.0.1 at 2013-07-10 12:05:00 +0200
+Served asset /refinery/icons/accept.png - 200 OK (18ms)
+
+
+Started GET "/assets/refinery/icons/add.png" for 127.0.0.1 at 2013-07-10 12:05:00 +0200
+Served asset /refinery/icons/add.png - 304 Not Modified (19ms)
+
+
+Started GET "/assets/refinery/icons/application_edit.png" for 127.0.0.1 at 2013-07-10 12:05:00 +0200
+Served asset /refinery/icons/application_edit.png - 304 Not Modified (18ms)
+
+
+Started GET "/assets/refinery/icons/flags/en.png" for 127.0.0.1 at 2013-07-10 12:05:00 +0200
+Served asset /refinery/icons/flags/en.png - 304 Not Modified (80ms)
+
+
+Started GET "/refinery/users" for 127.0.0.1 at 2013-07-10 12:05:12 +0200
+Processing by Refinery::Admin::UsersController#index as HTML
+  Parameters: {"locale"=>:en}
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (1.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (1.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (0.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "refinery_users" [0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" ORDER BY username ASC LIMIT 20 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1[0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_user.html.erb (6.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_users.html.erb (14.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_records.html.erb (19.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_actions.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/index.html.erb within layouts/refinery/admin (31.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (9.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 100.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:05:12 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:05:12 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:05:12 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:05:12 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/email_go.png" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /refinery/icons/email_go.png - 200 OK (72ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/application_edit.png" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /refinery/icons/application_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 12:05:13 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/add.png" for 127.0.0.1 at 2013-07-10 12:05:14 +0200
+Served asset /refinery/icons/add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 12:05:14 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/refinery/users/new" for 127.0.0.1 at 2013-07-10 12:05:15 +0200
+Processing by Refinery::Admin::UsersController#new as HTML
+  Parameters: {"locale"=>:en}
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (1.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" [0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_error_messages.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_form.html.erb (20.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/new.html.erb within layouts/refinery/admin (26.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (9.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 92.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:05:15 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:05:15 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:05:16 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:05:16 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:05:16 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 12:05:16 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 12:05:16 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 12:05:16 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 12:05:16 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 12:05:17 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:05:17 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/refinery/users/new" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Processing by Refinery::Admin::UsersController#new as HTML
+  Parameters: {"locale"=>:en}
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (0.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (1.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" [0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_error_messages.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_form.html.erb (18.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/new.html.erb within layouts/refinery/admin (22.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (8.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 12:05:37 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 12:05:38 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 12:05:38 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 12:05:38 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 12:05:38 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (1ms)
+
+
+Started GET "/refinery/users/new" for 127.0.0.1 at 2013-07-10 12:05:46 +0200
+Processing by Refinery::Admin::UsersController#new as HTML
+  Parameters: {"locale"=>:en}
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (0.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" [0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_error_messages.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_form.html.erb (18.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/new.html.erb within layouts/refinery/admin (24.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (9.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 93.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:05:47 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:05:47 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:05:47 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:05:47 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:05:47 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 12:05:47 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:05:48 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 12:05:48 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 12:05:48 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 12:05:48 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 12:05:48 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started POST "/refinery/users" for 127.0.0.1 at 2013-07-10 12:06:18 +0200
+Processing by Refinery::Admin::UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dhcLRmpb4z4FBeIOvqrVGtf5yxhSB8B5kcwrXA9nO+o=", "user"=>{"username"=>"ntampakis", "email"=>"nikitas.tampakis@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "plugins"=>["refinery_dashboard", "refinery_files", "refinery_images", "refinery_pages", "refinery_users"]}, "locale"=>:en}
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (0.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mRefinery::User Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "refinery_users" WHERE "refinery_users"."email" = 'nikitas.tampakis@gmail.com' LIMIT 1[0m
+  [1m[35mRefinery::User Exists (0.0ms)[0m  SELECT 1 AS one FROM "refinery_users" WHERE "refinery_users"."username" = 'ntampakis' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "refinery_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 10 Jul 2013 10:06:18 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "nikitas.tampakis@gmail.com"], ["encrypted_password", "$2a$10$ZHIhJyrhGOo8q7CTuTGd3eqZ9wflP9Ci76GGihS3M.P9qr3uRR/aa"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", nil], ["updated_at", Wed, 10 Jul 2013 10:06:18 UTC +00:00], ["username", "ntampakis"]]
+  [1m[35m (123.0ms)[0m  commit transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 2[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "refinery_user_plugins" ("name", "position", "user_id") VALUES (?, ?, ?)[0m  [["name", "refinery_dashboard"], ["position", 0], ["user_id", 2]]
+  [1m[35m (115.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "refinery_user_plugins" ("name", "position", "user_id") VALUES (?, ?, ?)  [["name", "refinery_files"], ["position", 1], ["user_id", 2]]
+  [1m[36m (157.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "refinery_user_plugins" ("name", "position", "user_id") VALUES (?, ?, ?)[0m  [["name", "refinery_images"], ["position", 2], ["user_id", 2]]
+  [1m[35m (137.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "refinery_user_plugins" ("name", "position", "user_id") VALUES (?, ?, ?)  [["name", "refinery_pages"], ["position", 3], ["user_id", 2]]
+  [1m[36m (172.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "refinery_user_plugins" ("name", "position", "user_id") VALUES (?, ?, ?)[0m  [["name", "refinery_users"], ["position", 4], ["user_id", 2]]
+  [1m[35m (143.0ms)[0m  commit transaction
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 2[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "refinery_roles_users" ("user_id", "role_id") VALUES (2, 1)
+  [1m[36m (125.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/refinery/users
+Completed 302 Found in 1095ms (ActiveRecord: 979.1ms)
+
+
+Started GET "/refinery/users" for 127.0.0.1 at 2013-07-10 12:06:19 +0200
+Processing by Refinery::Admin::UsersController#index as HTML
+  Parameters: {"locale"=>:en}
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (1.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (0.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "refinery_users" [0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" ORDER BY username ASC LIMIT 20 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1[0m
+  [1m[35mRefinery::Role Load (1.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_user.html.erb (7.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_users.html.erb (14.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_records.html.erb (19.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/_actions.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/authentication/app/views/refinery/admin/users/index.html.erb within layouts/refinery/admin (29.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (7.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 87.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 12:06:20 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 12:06:20 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 12:06:20 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 12:06:20 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 12:06:20 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/icons/delete.png" for 127.0.0.1 at 2013-07-10 12:06:20 +0200
+Served asset /refinery/icons/delete.png - 304 Not Modified (37ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 12:06:20 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 12:06:21 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 12:06:21 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 12:06:21 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/application_edit.png" for 127.0.0.1 at 2013-07-10 12:06:21 +0200
+Served asset /refinery/icons/application_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 12:06:21 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 12:06:21 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/add.png" for 127.0.0.1 at 2013-07-10 12:06:21 +0200
+Served asset /refinery/icons/add.png - 304 Not Modified (0ms)
+
+
+Started GET "/refinery/images" for 127.0.0.1 at 2013-07-10 16:37:22 +0200
+Processing by Refinery::Admin::ImagesController#index as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1[0m
+  [1m[35mRefinery::UserPlugin Load (0.0ms)[0m  SELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "refinery_images" 
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/images/app/views/refinery/admin/images/_records.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_search.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/images/app/views/refinery/admin/images/_actions.html.erb (11.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/images/app/views/refinery/admin/images/index.html.erb within layouts/refinery/admin (23.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (9.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (1.0ms)
+Completed 200 OK in 134ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/refinery/refinery.css" for 127.0.0.1 at 2013-07-10 16:37:22 +0200
+Served asset /refinery/refinery.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 16:37:23 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 16:37:23 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 16:37:23 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 16:37:23 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 16:37:23 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 16:37:23 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 16:37:24 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 16:37:24 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 16:37:24 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 16:37:24 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 16:37:24 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/add.png" for 127.0.0.1 at 2013-07-10 16:37:24 +0200
+Served asset /refinery/icons/add.png - 304 Not Modified (0ms)
+
+
+Started GET "/refinery/pages" for 127.0.0.1 at 2013-07-10 16:37:26 +0200
+Processing by Refinery::Admin::PagesController#index as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::User Load (1.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1[0m
+  [1m[35mRefinery::UserPlugin Load (1.0ms)[0m  SELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC
+  [1m[36mRefinery::Role Load (1.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "refinery_pages" 
+  [1m[36mRefinery::Page Load (1.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" ORDER BY lft ASC[0m
+  [1m[35mRefinery::Page::Translation Load (0.0ms)[0m  SELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" IN (1, 2, 3)
+  [1m[36mRefinery::Page Load (0.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."parent_id" IN (1, 2, 3) ORDER BY lft[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 1 AND "refinery_page_translations"."locale" = 'en'
+  [1m[36mRefinery::Page Load (1.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."parent_id" = 2 ORDER BY lft[0m
+  [1m[35mRefinery::Page::Translation Load (0.0ms)[0m  SELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 2
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 2 AND "refinery_page_translations"."locale" = 'en'[0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_page.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_page.html.erb (17.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 3 AND "refinery_page_translations"."locale" = 'en'
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_page.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_page.html.erb (46.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_sortable_list.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_sortable_list.html.erb (89.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_records.html.erb (95.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_search.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_actions.html.erb (10.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_make_sortable.html.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/index.html.erb within layouts/refinery/admin (138.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (13.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 242ms (Views: 225.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/refinery/refinery.css" for 127.0.0.1 at 2013-07-10 16:37:27 +0200
+Served asset /refinery/refinery.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 16:37:27 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 16:37:27 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 16:37:28 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 16:37:28 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nestedsortables.js" for 127.0.0.1 at 2013-07-10 16:37:28 +0200
+Compiled refinery/nestedsortables.js  (0ms)  (pid 5248)
+Served asset /refinery/nestedsortables.js - 304 Not Modified (55ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 16:37:28 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/serializelist.js" for 127.0.0.1 at 2013-07-10 16:37:28 +0200
+Compiled refinery/serializelist.js  (0ms)  (pid 5248)
+Served asset /refinery/serializelist.js - 304 Not Modified (85ms)
+
+
+Started GET "/assets/refinery/tree.js" for 127.0.0.1 at 2013-07-10 16:37:29 +0200
+Compiled refinery/tree.js  (0ms)  (pid 5248)
+Served asset /refinery/tree.js - 304 Not Modified (118ms)
+
+
+Started GET "/assets/refinery/icons/page_add.png" for 127.0.0.1 at 2013-07-10 16:37:29 +0200
+Served asset /refinery/icons/page_add.png - 304 Not Modified (77ms)
+
+
+Started GET "/assets/refinery/icons/application_go.png" for 127.0.0.1 at 2013-07-10 16:37:29 +0200
+Served asset /refinery/icons/application_go.png - 304 Not Modified (26ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 16:37:29 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/delete.png" for 127.0.0.1 at 2013-07-10 16:37:30 +0200
+Served asset /refinery/icons/delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 16:37:30 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 16:37:30 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 16:37:30 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 16:37:30 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/application_edit.png" for 127.0.0.1 at 2013-07-10 16:37:30 +0200
+Served asset /refinery/icons/application_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 16:37:31 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/branch.gif" for 127.0.0.1 at 2013-07-10 16:37:31 +0200
+Served asset /refinery/branch.gif - 304 Not Modified (66ms)
+
+
+Started GET "/assets/refinery/icons/folder_open.png" for 127.0.0.1 at 2013-07-10 16:37:31 +0200
+Served asset /refinery/icons/folder_open.png - 304 Not Modified (40ms)
+
+
+Started GET "/assets/refinery/icons/add.png" for 127.0.0.1 at 2013-07-10 16:37:31 +0200
+Served asset /refinery/icons/add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/page.png" for 127.0.0.1 at 2013-07-10 16:37:31 +0200
+Served asset /refinery/icons/page.png - 304 Not Modified (17ms)
+
+
+Started GET "/refinery/pages/about/edit" for 127.0.0.1 at 2013-07-10 16:37:39 +0200
+Processing by Refinery::Admin::PagesController#edit as HTML
+  Parameters: {"path"=>"about", "locale"=>:en}
+  [1m[36mRefinery::Page Load (0.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" INNER JOIN "refinery_page_translations" ON "refinery_page_translations"."refinery_page_id" = "refinery_pages"."id" WHERE "refinery_page_translations"."locale" IN ('en') AND "refinery_page_translations"."slug" = 'about' AND "refinery_pages"."parent_id" IS NULL LIMIT 1[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (1.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1
+  [1m[36mRefinery::UserPlugin Load (0.0ms)[0m  [1mSELECT "refinery_user_plugins".* FROM "refinery_user_plugins" WHERE "refinery_user_plugins"."user_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+  [1m[36mRefinery::Page::Translation Load (0.0ms)[0m  [1mSELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 3[0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_error_messages.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_locale_picker.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_form_fields_after_title.html.erb (1.0ms)
+  [1m[35mRefinery::PagePart Load (1.0ms)[0m  SELECT "refinery_page_parts".* FROM "refinery_page_parts" WHERE "refinery_page_parts"."refinery_page_id" = 3 ORDER BY position ASC
+  [1m[36mRefinery::PagePart::Translation Load (0.0ms)[0m  [1mSELECT "refinery_page_part_translations".* FROM "refinery_page_part_translations" WHERE "refinery_page_part_translations"."refinery_page_part_id" IN (4, 5)[0m
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_page_part_field.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_page_part_field.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_form_page_parts.html.erb (13.0ms)
+  [1m[35mRefinery::Page Load (0.0ms)[0m  SELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."parent_id" IS NULL ORDER BY "refinery_pages"."lft"
+  [1m[36mRefinery::Page Load (0.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" WHERE ("refinery_pages"."lft" >= 1 AND "refinery_pages"."lft" < 4) ORDER BY "refinery_pages"."lft"[0m
+  [1m[35mRefinery::Page Load (1.0ms)[0m  SELECT "refinery_pages".* FROM "refinery_pages" WHERE ("refinery_pages"."lft" >= 5 AND "refinery_pages"."lft" < 6) ORDER BY "refinery_pages"."lft"
+  [1m[36mRefinery::Page::Translation Load (0.0ms)[0m  [1mSELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" IN (1, 2)[0m
+  [1m[35mSeoMetum Load (1.0ms)[0m  SELECT "seo_meta".* FROM "seo_meta" WHERE "seo_meta"."seo_meta_type" = 'Refinery::Page::Translation' AND "seo_meta"."seo_meta_id" = 3 LIMIT 1
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/seo_meta-1.3.0/app/views/seo_meta/_form.html.erb (13.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_form_advanced_options_seo.html.erb (38.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_form_advanced_options.html.erb (56.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_continue_editing.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_form_actions.html.erb (11.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/_form.html.erb (114.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/admin/pages/edit.html.erb within layouts/refinery/admin (127.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_html_tag.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_javascripts.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_head.html.erb (11.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_site_bar.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/admin/_menu.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_no_script.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_message.html.erb (0.0ms)
+Completed 200 OK in 276ms (Views: 232.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/refinery/refinery.js" for 127.0.0.1 at 2013-07-10 16:37:39 +0200
+Served asset /refinery/refinery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/wymeditor/skins/refinery/skin.js" for 127.0.0.1 at 2013-07-10 16:37:39 +0200
+Served asset /wymeditor/skins/refinery/skin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js" for 127.0.0.1 at 2013-07-10 16:37:39 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wymeditor/lang/en.js" for 127.0.0.1 at 2013-07-10 16:37:39 +0200
+Served asset /wymeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/refinery.css" for 127.0.0.1 at 2013-07-10 16:37:40 +0200
+Served asset /refinery/refinery.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refinery/wymeditor.js" for 127.0.0.1 at 2013-07-10 16:37:40 +0200
+Served asset /refinery/wymeditor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/refinery/icons/information.png" for 127.0.0.1 at 2013-07-10 16:37:40 +0200
+Served asset /refinery/icons/information.png - 304 Not Modified (77ms)
+
+
+Started GET "/assets/refinery/orange_button.png" for 127.0.0.1 at 2013-07-10 16:37:40 +0200
+Served asset /refinery/orange_button.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/nav_inactive_background.png" for 127.0.0.1 at 2013-07-10 16:37:40 +0200
+Served asset /refinery/nav_inactive_background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/tick.png" for 127.0.0.1 at 2013-07-10 16:37:40 +0200
+Served asset /refinery/icons/tick.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/page_bg.png" for 127.0.0.1 at 2013-07-10 16:37:41 +0200
+Served asset /refinery/page_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/icons/page_white_gear.png" for 127.0.0.1 at 2013-07-10 16:37:41 +0200
+Served asset /refinery/icons/page_white_gear.png - 304 Not Modified (31ms)
+
+
+Started GET "/assets/refinery/icons/arrow_switch.png" for 127.0.0.1 at 2013-07-10 16:37:41 +0200
+Served asset /refinery/icons/arrow_switch.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refinery/logo-site-bar.png" for 127.0.0.1 at 2013-07-10 16:37:41 +0200
+Served asset /refinery/logo-site-bar.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-10 16:37:47 +0200
+Processing by Refinery::PagesController#home as HTML
+  Parameters: {"locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::Page Load (0.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."link_url" = '/' LIMIT 1[0m
+  [1m[35mRefinery::Page::Translation Load (1.0ms)[0m  SELECT "refinery_page_translations".* FROM "refinery_page_translations" WHERE "refinery_page_translations"."refinery_page_id" = 1
+  [1m[36mRefinery::PagePart Load (0.0ms)[0m  [1mSELECT "refinery_page_parts".* FROM "refinery_page_parts" WHERE "refinery_page_parts"."refinery_page_id" = 1 ORDER BY position ASC[0m
+  [1m[35mRefinery::PagePart::Translation Load (1.0ms)[0m  SELECT "refinery_page_part_translations".* FROM "refinery_page_part_translations" WHERE "refinery_page_part_translations"."refinery_page_part_id" IN (1, 2)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/core/app/views/refinery/_content_page.html.erb (6.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/bundler/gems/refinerycms-46a3f3bf85f7/pages/app/views/refinery/pages/home.html.erb within layouts/application (13.0ms)
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1[0m
+  [1m[35mRefinery::Role Load (0.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+Completed 200 OK in 82ms (Views: 73.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-07-10 16:37:48 +0200
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/prettyPhoto.css" for 127.0.0.1 at 2013-07-10 16:37:48 +0200
+Served asset /prettyPhoto.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-07-10 16:37:48 +0200
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2013-07-10 16:37:48 +0200
+Served asset /logo_small.png - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-07-10 16:37:48 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/js/bootstrap.min.js" for 127.0.0.1 at 2013-07-10 16:37:49 +0200
+Served asset /js/bootstrap.min.js - 404 Not Found (26ms)
+Processing by Refinery::PagesController#show as JS
+  Parameters: {"path"=>"assets/js/bootstrap.min", "locale"=>:en}
+  [1m[36mRefinery::Role Load (0.0ms)[0m  [1mSELECT "refinery_roles".* FROM "refinery_roles" WHERE "refinery_roles"."title" = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (1.0ms)[0m  SELECT "refinery_users".* FROM "refinery_users" INNER JOIN "refinery_roles_users" ON "refinery_users"."id" = "refinery_roles_users"."user_id" WHERE "refinery_roles_users"."role_id" = 1
+  [1m[36mRefinery::Page Load (1.0ms)[0m  [1mSELECT "refinery_pages".* FROM "refinery_pages" INNER JOIN "refinery_page_translations" ON "refinery_page_translations"."refinery_page_id" = "refinery_pages"."id" WHERE "refinery_page_translations"."locale" IN ('en') AND "refinery_page_translations"."slug" = 'assets' AND "refinery_pages"."parent_id" IS NULL LIMIT 1[0m
+  [1m[35mRefinery::Page Load (0.0ms)[0m  SELECT "refinery_pages".* FROM "refinery_pages" WHERE "refinery_pages"."menu_match" = '^/404$' LIMIT 1
+  [1m[36mRefinery::PagePart Load (0.0ms)[0m  [1mSELECT "refinery_page_parts".* FROM "refinery_page_parts" WHERE "refinery_page_parts"."refinery_page_id" IN (2) ORDER BY position ASC[0m
+  [1m[35mRefinery::PagePart::Translation Load (0.0ms)[0m  SELECT "refinery_page_part_translations".* FROM "refinery_page_part_translations" WHERE "refinery_page_part_translations"."refinery_page_part_id" IN (3)
+  Rendered refinery/pages/show.html.erb within layouts/application (0.0ms)
+Filter chain halted as :find_page rendered or redirected
+  [1m[36mRefinery::User Load (0.0ms)[0m  [1mSELECT "refinery_users".* FROM "refinery_users" WHERE "refinery_users"."id" = 1 LIMIT 1[0m
+  [1m[35mRefinery::Role Load (1.0ms)[0m  SELECT "refinery_roles".* FROM "refinery_roles" INNER JOIN "refinery_roles_users" ON "refinery_roles"."id" = "refinery_roles_users"."role_id" WHERE "refinery_roles_users"."user_id" = 1
+Completed 404 Not Found in 23ms (Views: 11.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/title_small.png" for 127.0.0.1 at 2013-07-10 16:37:49 +0200
+Served asset /title_small.png - 304 Not Modified (27ms)
+
+
+Started GET "/assets/js/jquery.prettyPhoto.js" for 127.0.0.1 at 2013-07-10 16:37:49 +0200
+Served asset /js/jquery.prettyPhoto.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2_translucent.jpg" for 127.0.0.1 at 2013-07-10 16:37:49 +0200
+Served asset /bg2_translucent.jpg - 304 Not Modified (12ms)
