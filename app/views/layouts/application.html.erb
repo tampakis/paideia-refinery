@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "PaideiaBootstrap" %></title>
+    <%= csrf_meta_tags %>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+<![endif]-->
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <!-- Size should be 144 x 144 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <!-- Size should be 114 x 114 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+
+    <!-- For first- and second-generation iPad: -->
+    <!-- Size should be 72 x 72 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <!-- Size should be 57 x 57 pixels -->
+    <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+
+    <!-- For all other devices -->
+    <!-- Size should be 32 x 32 pixels -->
+    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+
+    <%= stylesheet_link_tag "prettyPhoto.css" %>
+
+
+  </head>
+  <body>
+
+
+    <header>
+<!-- <%= image_tag "logo.png" %><%= image_tag "title.png" %>-->
+    </header>
+  
+	
+
+
+<div class="nav-container">
+
+    <div class="navbar"><div class="navbar-inner">
+
+    <div class="logo-container">
+    <%= image_tag "logo_small.png" %><%= image_tag "title_small.png" %>
+    </div>
+
+<div class="container" >
+<!--<a class="brand" href="/home/index">-->
+<!--The Paideia Institute-->
+<!--</a>-->
+<ul class="nav ">
+<li><a href="/home/index">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="/about/mission">Mission Statement</a></li>
+<li><a href="/about/staff">Our Staff</a></li>
+<li><a href="/about/gov">Governance</a></li>
+</ul></li>	
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Programs <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="/programs/rome">Living Latin in Rome</a></li>
+<li><a href="/programs/high_school">Living High School Latin in Rome</a></li>
+<li><a href="/programs/greece">Living Greek in Greece</a></li>
+<li><a href="/programs/paris">Living Latin in Paris</a></li>
+</ul></li>	
+<li><a href="/media/photo_gallery">Photo Gallery</a></li>
+<li><a href="/contact/index">Contact Us</a></li>
+</ul></div></div></div>
+
+</div>
+<!--</div></div>-->
+
+
+    <div class="container-fluid">
+       
+
+<div class="carousel-container">	
+
+          <%#= bootstrap_flash %>
+      <% if (current_page?("/home/index") || current_page?("/")) %>
+          <%= yield :carousel %>
+      <% end %>
+
+        </div><!-- the mystery of what this closes remains... -->
+
+</div>
+
+      <div class="row-fluid">
+
+<div class="span1">
+</div>
+<div class="span10" id="main-content"><!-- wrap it all in a span to center-->
+
+          <%= yield :home_lead %>
+
+          <%= yield %>
+
+        </div><!--/wrapper span (main-content) -->
+
+
+      </div><!--/wrapper row-->
+
+
+      <footer>
+        <p>&copy; The Paideia Institute 2013</p>
+      </footer>
+      
+    </div> <!-- /container -->
+
+
+
+    <!-- Javascripts
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag "application" %>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <script src="/assets/js/jquery.prettyPhoto.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto({slideshow:5000, autoplay_slideshow:true, theme: 'pp_default', social_tools: false, allow_resize: false, default_width: 200,
+default_height: 200
+})
+    });
+</script>
+
+
+
+  </body>
+</html>
